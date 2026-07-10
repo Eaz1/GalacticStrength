@@ -1,5 +1,6 @@
 package me.eaz.strengthsmp;
 
+import me.eaz.strengthsmp.placeholder.StrengthPlaceholder;
 import me.eaz.strengthsmp.commands.StrengthCommand;
 import me.eaz.strengthsmp.listeners.DamageListener;
 import me.eaz.strengthsmp.listeners.DeathListener;
@@ -31,6 +32,10 @@ public class StrengthSMP extends JavaPlugin {
 
         getCommand("strength").setExecutor(
                 new StrengthCommand(this));
+        if (getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+    new StrengthPlaceholder(this).register();
+    getLogger().info("PlaceholderAPI hooked!");
+        }
 
         getLogger().info("StrengthSMP enabled!");
     }
