@@ -1,0 +1,19 @@
+name: StrengthSMP
+version: 1.0.0
+main: me.eaz.strengthsmp.StrengthSMP
+author: Eaz
+description: Permanent strength progression plugin for Spigot 1.12.2
+website: https://github.com/Eaz/StrengthSMP
+
+softdepend: [PlaceholderAPI]
+
+commands:
+  strength:
+    description: Strength commands
+    usage: /strength
+    aliases: [str]
+
+permissions:
+  strengthsmp.admin:
+    description: Access to admin strength commands
+    default: op
