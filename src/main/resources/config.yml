@@ -1,0 +1,21 @@
+# StrengthSMP Configuration
+
+# Damage gained per player kill (1 damage = 0.5 hearts)
+damage-per-kill: 1.0
+
+# Maximum bonus damage (10 damage = 5 hearts)
+max-bonus-damage: 10.0
+
+# Minimum bonus damage
+min-bonus-damage: 0.0
+
+# Lose strength on PvP death
+lose-on-death: true
+
+messages:
+  gained: "&a+0.5❤ Strength! &7Current Bonus: &e%bonus%❤"
+  lost: "&c-0.5❤ Strength! &7Current Bonus: &e%bonus%❤"
+  max: "&cYou are already at the maximum strength bonus!"
+  reset: "&aAll player strength has been reset."
+  no-permission: "&cYou do not have permission."
+  player-only: "&cOnly players can use this command."
